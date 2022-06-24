@@ -14,6 +14,7 @@ class provider extends Authenticatable
 
     protected $fillable = [
         'email',
+        'name',
         'password',
     ];
 

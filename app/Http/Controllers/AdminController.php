@@ -36,7 +36,7 @@ class AdminController extends Controller
     }
 
     public function getAllProviders(){
-        $providers=provider::all();
+        $providers=provider::select('name','email')->get();
             return response()->json($providers);
     }
 }
